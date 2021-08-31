@@ -1,0 +1,195 @@
+<!-- 
+  
+CSS NOTES 
+
+Retina Display - Apple
+high pixel density
+
+Pixel Display - pixel within space
+Retina Display have double the number of PPI/DPI 
+
+
+relative path - remove / for the file path
+absolute path - locate in server, must have full links including https or http
+
+syntax:
+
+padding: 10px 5px; - for all 
+
+reference: codeguide.co
+
+values and units
+
+1. absolute<length>
+  fixed unit, always same size
+  not affected by values in related elements
+  example: px, cm, mm, pt
+
+2. relative<length>
+  relational sizing, not fixed
+  dependent upon values declared in parent and ancestor elements
+  example: em, rem, vw, vh
+
+  selectors rank
+
+  universal < type < class < id
+  if got type and id for the same html - will overwrite css from id type selector
+
+THE BOX MODEL
+
+HTML Elements: Inline and Block - level
+
+1. Inline
+elements display side by side inline from the left
+elements will only wrap when items cannot fit
+eg: <a> <span> <strong>
+
+2. Block
+same height as content, same width as container
+always start on a new line
+eg: <p> <h1> <article> <section> <div>
+
+** can add style display: block or display: inline-block to change the nature of elements
+
+
+BOX MODEL 
+
+Content < Padding < Border < Margin
+
+5 CSS properties for Box Model
+
+height - height for content area
+width - width for content area
+padding - add or removes space between element
+margin - add or removes space around the elements
+border - added between padding and margin
+
+use percentage and length
+
+eg: 
+
+.container {
+  width: 1000px;
+}
+
+.inside-container {
+  width: 50%;
+}
+
+TYPOGRAPHY
+
+typeface - set of fonts design with common chracteristics, composed of glyphs.
+
+
+font size
+
+em - inherit parents size 
+
+rem - for html
+
+FLOAT
+
+use float and margin in css
+to remove style in certain class can use clear: both;
+
+float and collapsed container
+1. overflow
+2. clearfix
+3. display: flow-root;
+
+POSITION
+
+1. static: not positioned
+2. relative: relative to current position
+3. absolute: relative to containing element
+4. fixed: relative to viewport
+5. sticky: relative to containing element and viewport
+
+
+FLEXBOX
+
+flexbox: distribution across a single axis
+
+- flex container diplay:flex; or display: inline-flex;
+- flex-direction: row, column, column-reverse, row-revese
+- flex-wrap: nowrap, wrap, wrap-reverse,;
+- flex-flow
+-flex properties
+shorthand:
+- flex: grow shrink basis;
+
+- flex item : to customize flex item
+
+reference: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+grid - layouts with both rows and columns
+
+gutter - add space between columns 
+gap:20px
+column-gap:
+row-gap:
+
+grid-container : parent, display: grid or display: inline-grid;
+
+grid-template-column: 1fr 1fr 1fr;
+or
+grid-template-column: repeat(3, 1fr); 
+grid-template-rows
+
+unit: fr
+
+grid-items : child
+
+ADVANCE SELECTORS
+
+1. child combinator >
+    parent > child {
+      color: blue;
+    }
+
+2. adjacent sibling combinator +
+    h1 + p {
+      color: pink;
+    }
+
+3. general sibling combinator ~
+    h1 ~ p {
+      color: green;
+    }
+
+    pseduo class
+
+    p:first-child {
+      color: red;
+    }
+
+    RESPONSIVE WEB DESIGN
+
+    1. Fluid layout
+    2. Flexible images
+    3. Media queries
+
+
+    CSS Model Box 
+
+    display: block
+      <h1> ... <h6>
+      <p>
+      <blockquote>
+      <li>
+      <div>
+      <section>
+      <nav>
+      <article>
+      <aside>
+      <header>
+      <footer>
+
+    display: inline
+      <em>
+      <strong>
+      <a>
+      <span>
+      <img>
+-->
+
